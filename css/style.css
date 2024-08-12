@@ -1,248 +1,105 @@
-/*Reset*/
-
-*{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  background-color: aliceblue;
 }
-/*estilos generales */
-body{
-    background-color: aliceblue;
-    }
 
-/*/estilos mobile*/
-/*estilo de Header*/
-
-header{
-    background-color:#FFC98B;
-    text-align: center;
-    justify-content: center;
-    }
-    
+header {
+  background-color: hsl(32, 100%, 77%);
+  text-align: center;
+  justify-content: center;
+}
 header img {
-    width: 125px;
-    margin: 5px;
-   justify-content: center;
+  width: 125px;
+  margin: 5px;
+  justify-content: center;
 }
 
- /*Estilos de mail*/
- .cards-grapper{
-    flex-wrap: wrap;
-    margin: 10px;
-    justify-content: center;
+main {
+  margin: 0 30px;
+  grid-template-rows: repeat(3, 26%);
+  grid-template-columns: 1fr;
+  align-content: center;
+  row-gap: 20px;
+  list-style: none;
 }
- main div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
- }
- main{
-    margin: 0 30px; 
-    grid-template-rows: repeat(3, 26%) ;
-    grid-template-columns: 1fr;
-    align-content: center;
-    row-gap: 20px;
-    list-style: none;
+main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-main section img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
+main .colum img {
+  margin-top: 10px;
 }
-.colum img{
-    margin-top: 10px;
+main .colum {
+  display: flex;
+  padding: 10px;
+  margin: 5px;
+  flex-wrap: wrap;
 }
-.colum{
-    display: flex;
-    padding: 10px;
-    margin: 5px;
-    flex-wrap: wrap;
+main .cards-grapper {
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
 }
-main h1{
-    text-align: center;
-    color:chocolate;
-    font-size: xx-large;
-    text-transform: uppercase;
-} 
-main h2{
-    text-align: center;
-    margin: 20px;
-    font-size: x-large;
-    color: darkslategrey;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+main h1 {
+  text-align: center;
+  color: chocolate;
+  font-size: xx-large;
+  text-transform: uppercase;
 }
-main h3{
-    text-align: left;
-    font-size: xx-large;
-    color: chocolate;
+main h2 {
+  background-color: antiquewhite;
+  text-align: center;
+  margin: 20px;
+  font-size: x-large;
+  color: darkslategrey;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-main h4{
-    text-align: left;
-    font-size: large;
-    color:black;
+main h3 {
+  text-align: left;
+  font-size: xx-large;
+  color: chocolate;
 }
-main p{
-    text-align:justify;
-    margin-bottom: 10px;
+main h4 {
+  text-align: left;
+  font-size: large;
+  color: black;
 }
-div a{
-    list-style: none;
-    text-decoration: none;
-    color: darkslategrey;
+main p {
+  text-align: justify;
+  margin-bottom: 10px;
+  padding: 10px;
 }
-.text-box h2{
-    font-size: 42px;
-    padding: 10px;
+main div {
+  list-style: none;
+  text-decoration: none;
+  color: darkslategrey;
 }
- main nav a{
-    color: black;
-    text-decoration: none;
- }
-
- /*estilos de footer*/
-
- footer {
-    background-color:chocolate;
-    display: flex;
-    justify-content:center;
-    align-items: center;
- }
- footer img{
-    padding: 5px;
-
- }
- footer ul {
-    list-style: None;
-    flex-direction: row;
+main .text-box h2 {
+  font-size: 42px;
+  padding: 10px;
 }
- footer ul li a{
-    text-decoration: none;
-    color: aliceblue;
+main a {
+  color: black;
+  text-decoration: none;
 }
 
-
-/* mq de desktop*/
-@media (max-width: 600px){
-    .colum{
-        flex: 70%;
-    }   
+/*estilos de footer*/
+footer {
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  padding: 5px;
+}
+footer ul {
+  list-style: None;
+  flex-direction: row;
+}
+footer a {
+  text-decoration: none;
+  color: aliceblue;
 }
 
-@media screen and (min-width: 1024px){
-    body{
-        background-color: aliceblue
-    }
-    body div img{
-        justify-content: center;
-    }
-    
-    .cards-grapper{
-        column-gap: 10px;
-        justify-content: center;
-    
-    }
-    main p{
-        margin: 10px;
-        text-align: justify; 
-    }
-    main h1{
-        margin: 10px;
-    } 
-    main h2{
-        background-color:antiquewhite;
-        margin: 20px;
-        text-align: center;
-        } 
-    
-    main h3{
-        text-align: center;
-    }
-    main div img{
-        height: 100%;
-        float: left;
-    }
-    main .maqueta{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows:10%, repeat(7, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 6px;      
-  
-    }
-    .fila1 { grid-area: 1 / 1 / 2 / 4; }
-    .fila2 { grid-area: 2 / 2 / 3 / 3; }
-    .fila3 { grid-area: 3 / 2 / 4 / 3; }
-    .fila4 { grid-area: 2 / 1 / 4 / 2; }
-    .fila5 { grid-area: 4 / 2 / 5 / 3; }
-    .fila6 { grid-area: 5 / 2 / 6 / 3; }
-    .fila7 { grid-area: 4 / 3 / 6 / 4; }
-    .fila8 { grid-area: 6 / 1 / 7 / 2; }
-    .fila9 { grid-area: 7 / 1 / 8 / 2; }
-    .fila10 { grid-area: 6 / 2 / 8 / 3; }
-
-    .parent {
-        display: grid;
-        grid-template-columns: repeat(3, 33%);
-        grid-template-rows:20%, repeat(7, 1fr) 10%;
-        grid-column-gap: 8px;
-        grid-row-gap: 5px;
-    }
-
-    .div1 { grid-area: 1 / 1 / 2 / 4; }
-    .div2 { grid-area: 2 / 1 / 4 / 3; }
-    .div3 { grid-area: 2 / 3 / 4 / 4; }
-    .div4 { grid-area: 4 / 1 / 5 / 4; }
-    .div5 { grid-area: 5 / 1 / 6 / 2; }
-    .div6 { grid-area: 6 / 1 / 7 / 2; }
-    .div7 { grid-area: 7 / 1 / 8 / 2; }
-    .div8 { grid-area: 5 / 2 / 6 / 3; }
-    .div9 { grid-area: 6 / 2 / 7 / 3; }
-    .div10 { grid-area: 7 / 2 / 8 / 3; }
-    .div11 { grid-area: 5 / 3 / 6 / 4; }
-    .div12 { grid-area: 6 / 3 / 7 / 4; }
-    .div13 { grid-area: 7 / 3 / 8 / 4; }  
-
-    .contenedor2 {
-      display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows:0% 25% 3% 25% 3% 25% 0%;
-     grid-column-gap: 10px;
-     grid-row-gap: 10px;
-    }
-            
-    .img1 { grid-area: 1 / 1 / 2 / 4; }
-    .img3 { grid-area: 3 / 1 / 4 / 2; }
-    .img4 { grid-area: 4 / 1 / 5 / 2; }
-    .img5 { grid-area: 3 / 2 / 4 / 3; }
-    .img6 { grid-area: 4 / 2 / 5 / 3; }
-    .img7 { grid-area: 3 / 3 / 4 / 4; }
-    .img8 { grid-area: 4 / 3 / 5 / 4; }
-    .img9 { grid-area: 5 / 1 / 6 / 2; }
-    .img10 { grid-area: 6 / 1 / 7 / 2; }
-    .img11 { grid-area: 5 / 2 / 6 / 3; }
-    .img12 { grid-area: 6 / 2 / 7 / 3; }
-    .img13 { grid-area: 5 / 3 / 6 / 4; }
-    .img14 { grid-area: 6 / 3 / 7 / 4; }
-
-    .don {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows:15%, repeat(5, 1fr);
-        grid-column-gap: 6px;
-        grid-row-gap: 6px;
-        align-content: center;
-        }
-        .tex1 { grid-area: 1 / 1 / 2 / 3; }
-        .tex2 { grid-area: 2 / 1 / 3 / 3; }
-        .tex3 { grid-area: 3 / 1 / 4 / 2; }
-        .tex4 { grid-area: 4 / 1 / 5 / 2; }
-        .tex5 { grid-area: 3 / 2 / 4 / 3; }
-        .tex6 { grid-area: 4 / 2 / 5 / 3; }
-        .tex7 { grid-area: 5 / 1 / 6 / 3; }
-
-       
-}
-
-
+/*# sourceMappingURL=style.css.map */
