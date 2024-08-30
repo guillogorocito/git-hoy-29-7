@@ -1,0 +1,68 @@
+main h2{
+   text-align: center;
+}
+.contenedor0{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+       }
+ .item{
+    width: 30%;
+    margin: 10px;
+ }
+ .titulos{
+    
+    height: 10vh;
+    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }    
+ .item1{
+       width: 30%;
+       margin: 10px;
+       text-align: center;
+       font-size: 25px;
+       color: chocolate;
+ 
+ }
+ .parrafos{
+    height: 35vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    }
+
+ .item2{
+       width: 45%;
+       margin: 10px;
+       border: solid, aliceblue;
+       padding: 5px;
+       text-align: justify;
+       font-size: 15px;
+    }  
+   img{
+      width: 50%;
+      align-items: center;
+       } 
+footer {
+        background-color: chocolate;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+           margin-top: 5px;
+           padding: 5px;
+        }
+        ul{
+           list-style: none;
+           flex-direction: row;
+        }
+        a{
+           text-decoration: none;
+           color:aliceblue;
+        }
+    }

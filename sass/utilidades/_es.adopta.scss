@@ -1,0 +1,56 @@
+main h4{
+    text-align: left;     
+    }
+    h2 {text-align: left;
+    }
+.fotos{
+    height: 50%;
+    display:flex;
+    flex-direction: row;    
+    }
+.pic{
+    width: 50%;
+    margin: 5px;
+}
+.nombres{
+    height: 20%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 5px;
+    padding: 3px;
+    }
+.tit{
+    width: 60%;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.fotos2{
+    height: 50%;
+    display:flex;
+    flex-direction: row;
+    }
+
+.pic2{
+    width: 60%;
+    margin: 5px;
+}
+.nombres2{
+    height: 20%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 5px;
+    padding: 3px;
+    }
+
+.tit1{
+    width: 60%;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    }
+    

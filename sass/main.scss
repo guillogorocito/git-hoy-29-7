@@ -1,104 +1,82 @@
-// nesting
 body{
-    background-color: aliceblue;
-    }
-
-header{
-        background-color:hsl(32, 100%, 77%);
-        text-align: center;
-        justify-content: center;
-        img{
-         width: 125px;
-         margin: 5px;
-         justify-content: center;
-      }
-    }
- main{
-    margin: 0 30px; 
-    grid-template-rows: repeat(3, 26%) ;
-    grid-template-columns: 1fr;
-    align-content: center;
-    row-gap: 20px;
-    list-style: none;
-   img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-   }
-    .colum img{
-    margin-top: 10px;
-    }
-    .colum{
-    display: flex;
-    padding: 10px;
-    margin: 5px;
-    flex-wrap: wrap;
-   }
-   .cards-grapper{
-      flex-wrap: wrap;
-      margin: 10px;
-      justify-content: center;
-   }
-    h1{
-    text-align: center;
-    color:chocolate;
-    font-size: xx-large;
-    text-transform: uppercase;
-    } 
-    h2 {
-    background-color:antiquewhite;
-    text-align: center;
-    margin: 20px;
-    font-size: x-large;
-    color: darkslategrey;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    h3{
-    text-align: left;
-    font-size: xx-large;
-    color: chocolate;
-    }
-    h4{
-    text-align: left;
-    font-size: large;
-    color:black;
-    }
-    p{
-    text-align:justify;
-    margin-bottom: 10px;
-    padding: 10px;
-    }
-    div{
-    list-style: none;
-    text-decoration: none;
-    color: darkslategrey;
-    }
-    .text-box h2{
-    font-size: 42px;
-    padding: 10px;
-    }
-    a{
-    color: black;
-    text-decoration: none;}
-
+   background-color: aliceblue;
 }
- /*estilos de footer*/
+header {
+   background-image: linear-gradient(to left, #ffc88a, #f8ecdf99);
+   text-align: right;
+   justify-content: center;
+      img {
+      width: 100px;
+      margin: 5px;
+   }
+}
+main {
+   margin: 0 30px;
+   display: flex;
+   
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   h1 {
+      margin-top: 10px;
+      text-align: center;
+      color: chocolate;
+      font-size: xx-large;
+      text-transform: uppercase;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   h2{
+      background-color: chocolate;
+      margin: 20px;
+      padding: 10px;
+      color: aliceblue;
+   }
 
- footer{
-    background-color:chocolate;
-    display: flex;
-    justify-content:center;
-    align-items: center;
- img{
-    padding: 5px;
+   a {
+      text-transform: uppercase;
+      color: black;
+      font-size: 35px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-decoration: none;
+      padding: 3px;
+   }
+   p {text-align:left;
+      margin-bottom: 5px;
+      padding: 10px;
+      color:#1d1d1d;
+      font-size: 20px;
+     }
+   }
+footer {
+   background-color: chocolate;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   img {
+      margin-top: 5px;
+      padding: 5px;
    }
    ul{
-    list-style: None;
-    flex-direction: row;
-    }
-    a{
-    text-decoration: none;
-    color: aliceblue;}
+      list-style: none;
+      flex-direction: row;
+   }
+   a{
+      text-decoration: none;
+      color:aliceblue;
+   }
+.jpg{
+   width: 35px;
+}
 }
 
-@import "./media-queries";
+@import "utilidades/es.nosotros";
+@import "utilidades/es.home";
+@import "utilidades/es.adopta";
+@import "utilidades/productos";
+@import "utilidades/mediaquieris";
+@import "utilidades/es.dona";
+
+

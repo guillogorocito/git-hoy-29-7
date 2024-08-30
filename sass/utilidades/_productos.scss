@@ -1,0 +1,65 @@
+header{
+    img{
+        width: 125px;
+        margin: 5px;
+        justify-content: center; 
+    }    
+}
+main{
+flex-direction: column;
+}
+
+.contenedor1{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+       }
+ .tazas{
+    width: 30%;
+    margin: 10px;
+ }
+ .contenedor2{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+       }
+ .chapas{
+    width: 30%;
+    margin: 10px;
+ }
+ .contenedor3{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+       }
+ .cuadernos{
+    width: 30%;
+    margin: 10px;
+ }
+ .contenedor4{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+       }
+ .accesorios{
+    width: 30%;
+    margin: 10px;
+ }
+ .contenedor5{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+       }
+ .ilustraciones{
+    width: 30%;
+    margin: 10px;
+ }
+ h3{
+    color:chocolate;
+ }

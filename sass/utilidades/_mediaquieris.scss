@@ -1,0 +1,44 @@
+@mixin mobile {
+    @media screen and (max-width: 600px) {
+        main{
+            display: flex;
+            flex-direction: column
+        };
+    }
+}
+@mixin destock {
+    @media screen and (min-width: 1024px) {
+        @content;    
+    body {
+        background-color: aliceblue
+    }
+    main{
+        img{
+        justify-content: center;
+        margin: 10px;
+        } 
+        .cards-grapper{
+        column-gap: 10px;
+        justify-content: center;
+        }
+        p{
+        margin: 10px;
+        text-align: justify;
+        }
+        h1{
+        margin: 10px;} 
+        h2{
+        background-color:antiquewhite;
+        margin: 20px;
+        text-align: center;
+        } 
+        h3{
+        text-align: center;}
+        
+        div img {
+        height: 100%;
+        float: left;};
+        }     
+    }
+
+}
